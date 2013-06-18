@@ -8,9 +8,94 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/layout_linear_top"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:orientation="horizontal"
+        >
 
+	    <Spinner
+	        android:id="@+id/spinner_rollCount"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:spinnerStyle="@android:style/Widget.Spinner.DropDown"
+	         />
+
+        <ToggleButton
+            android:id="@+id/toggle_addDamage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOff="@string/string_addDamage_f"
+            android:textOn="@string/string_addDamage_t" />
+
+    </LinearLayout>
+    
+    <!-- Buttons -->
+
+    <LinearLayout
+        android:id="@+id/layout_linear_smallButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/layout_linear_top"
+        android:orientation="vertical"
+        >
+
+	    <Button 
+	        android:id="@+id/button_d4"
+	        android:text="@string/string_d4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        />
+	    <Button 
+	        android:id="@+id/button_d6"
+	        android:text="@string/string_d6"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        />
+	    <Button 
+	        android:id="@+id/button_d8"
+	        android:text="@string/string_d8"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        />
+	    <Button 
+	        android:id="@+id/button_d10"
+	        android:text="@string/string_d10"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        />
+	    <Button 
+	        android:id="@+id/button_d12"
+	        android:text="@string/string_d12"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        />
+	    
+	    <Button 
+	        android:id="@+id/button_d100"
+	        android:text="@string/string_d100"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        />
+	</LinearLayout>
+
+	<LinearLayout
+	    android:id="@+id/layout_linear_bottom"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="false"
+	    android:layout_below="@id/layout_linear_smallButtons" >
+
+    <Button
+        android:id="@+id/button_d20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/string_d20" />
+
+    </LinearLayout>
+    <!-- /Buttons -->
+    
 </RelativeLayout>
