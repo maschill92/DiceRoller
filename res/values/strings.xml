@@ -12,9 +12,8 @@
     <string name="string_d100">d100</string>
     <string name="string_addDamage_t">Add</string>
     <string name="string_addDamage_f">Separate</string>
-    
     <string name="temp">100</string>
-    
+
     <string-array name="stringArray_rollCount">
         <item name="1">1</item>
         <item name="2">2</item>
@@ -27,5 +26,8 @@
         <item name="9">9</item>
         <item name="10">10</item>
     </string-array>
+
+    <string name="title_activity_treasure_generator4e">4e Treasure Generator</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
